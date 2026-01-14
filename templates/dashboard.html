@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome to Secure Dashboard</h2>
+
+<p>Your role: <b>{{ role }}</b></p>
+
+{% if role == "admin" %}
+    <p><a href="/admin">Go to Admin Panel</a></p>
+{% endif %}
+
+<p><a href="/logout">Logout</a></p>
+
+</body>
+</html>
